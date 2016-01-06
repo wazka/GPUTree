@@ -151,6 +151,7 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <CudaCompile Include="GPUTreeCore\GPUTreeBuilder.cu" />
     <CudaCompile Include="kernel.cu" />
     <CudaCompile Include="Tests\Tests.cu" />
     <CudaCompile Include="TreeBuildingTests.cu" />
@@ -158,9 +159,6 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
   <ItemGroup>
     <ClInclude Include="GPUTree.cuh" />
     <ClInclude Include="Tests\Tests.cuh" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="GPUTreeBuilder.cu" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

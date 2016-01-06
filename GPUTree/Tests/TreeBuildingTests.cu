@@ -1,5 +1,5 @@
 #include "Tests/Tests.cuh"
-#include "GPUTreeCore/GPUTree.cuh"
+#include "GPUTree.cuh"
 
 void Given_Data_When_BinaryTreeBuilded_Then_TreePropertiesSetted()
 {

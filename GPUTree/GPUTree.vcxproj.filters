@@ -8,6 +8,9 @@
     <CudaCompile Include="TreeBuildingTests.cu">
       <Filter>Tests</Filter>
     </CudaCompile>
+    <CudaCompile Include="GPUTreeCore\GPUTreeBuilder.cu">
+      <Filter>GPUTreeCore</Filter>
+    </CudaCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">
@@ -24,10 +27,5 @@
     <ClInclude Include="GPUTree.cuh">
       <Filter>GPUTreeCore</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="GPUTreeBuilder.cu">
-      <Filter>GPUTreeCore</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
