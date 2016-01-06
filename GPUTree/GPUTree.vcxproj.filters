@@ -5,15 +5,29 @@
     <CudaCompile Include="Tests\Tests.cu">
       <Filter>Tests</Filter>
     </CudaCompile>
+    <CudaCompile Include="TreeBuildingTests.cu">
+      <Filter>Tests</Filter>
+    </CudaCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">
       <UniqueIdentifier>{d07efaa8-edd9-4f9d-8533-7bc02c3c0a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GPUTreeCore">
+      <UniqueIdentifier>{29475411-49f7-4d4d-ace6-0097695a7a8a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tests\Tests.cuh">
       <Filter>Tests</Filter>
     </ClInclude>
+    <ClInclude Include="GPUTree.cuh">
+      <Filter>GPUTreeCore</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GPUTreeBuilder.cu">
+      <Filter>GPUTreeCore</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

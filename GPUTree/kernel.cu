@@ -9,6 +9,7 @@ int main(int argc, char **argv)
 		InitAllTests();
 
 		//Tests code here
+		TreeBuildingTests();
 
 		FinalReport();
 		return EXIT_SUCCESS;

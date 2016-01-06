@@ -12,3 +12,5 @@ void PrintException(std::exception e);
 void InitAllTests();
 void PackReport();
 void InitPack();
+
+void TreeBuildingTests();
