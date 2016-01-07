@@ -17,7 +17,7 @@ GPUTree BuildTree(DV &data, int count, int lenght, int bitsPerLevel)
 	tree.Lenght = lenght;
 	tree.BitsPerLevel = bitsPerLevel;
 	tree.ChildrenPerLevel = 1 << bitsPerLevel;
-	tree.LevelCount = lenght * sizeof(int) / bitsPerLevel;
+	tree.LevelCount = lenght * INT_SIZE / bitsPerLevel;
 
 	//Sorting data
 	DV permutation = SortData(count, lenght, data);

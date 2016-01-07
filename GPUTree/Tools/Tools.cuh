@@ -13,6 +13,9 @@
 #include <thrust/binary_search.h>
 #include <thrust/execution_policy.h>
 
+//Defines
+#define INT_SIZE 32
+
 //Typedefs
 typedef thrust::device_vector<int> DV;
 

@@ -20,7 +20,7 @@ void Given_Data_When_BinaryTreeBuilded_Then_TreePropertiesSetted()
 		tree.Count == count,
 		tree.Lenght == lenght,
 		tree.BitsPerLevel == 1,
-		tree.LevelCount == lenght * sizeof(int),
+		tree.LevelCount == 160,
 		tree.ChildrenPerLevel == 2
 		);
 
@@ -47,7 +47,7 @@ void Given_Data_When_OctalTreeBuilded_Then_TreePropertiesSetted()
 		tree.Count == count,
 		tree.Lenght == lenght,
 		tree.BitsPerLevel == 3,
-		tree.LevelCount == lenght * sizeof(int) / 3,
+		tree.LevelCount == 64,
 		tree.ChildrenPerLevel == 8
 		);
 
