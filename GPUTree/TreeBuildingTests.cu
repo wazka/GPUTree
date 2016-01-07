@@ -7,9 +7,10 @@ void Given_Data_When_BinaryTreeBuilded_Then_TreePropertiesSetted()
 
 	//given
 	int count = 100;
-	int lenght = 50;
+	int lenght = 5;
 
 	int *data = static_cast<int*>(malloc(count * lenght * sizeof(int)));
+	thrust::sequence(data, data + count * lenght);
 
 	//when
 	GPUTree tree = BuildTree(data, count, lenght, 1);
@@ -33,9 +34,10 @@ void Given_Data_When_OctalTreeBuilded_Then_TreePropertiesSetted()
 
 	//given
 	int count = 100;
-	int lenght = 60;
+	int lenght = 6;
 
 	int *data = static_cast<int*>(malloc(count * lenght * sizeof(int)));
+	thrust::sequence(data, data + count * lenght);
 
 	//when
 	GPUTree tree = BuildTree(data, count, lenght, 3);

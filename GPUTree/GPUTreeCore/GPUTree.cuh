@@ -1,4 +1,4 @@
-#include "thrust/device_vector.h"
+#include "../Tools/Tools.cuh"
 
 struct GPUTree
 {
@@ -11,5 +11,5 @@ struct GPUTree
 
 GPUTree BuildTree(int *data, int count, int lenght, int bitsPerLevel);
 
-GPUTree BuildTree(thrust::device_vector<int> &data, int count, int lenght, int bitsPerLevel);
+GPUTree BuildTree(DV &data, int count, int lenght, int bitsPerLevel);
 

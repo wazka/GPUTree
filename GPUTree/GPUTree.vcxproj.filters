@@ -11,6 +11,9 @@
     <CudaCompile Include="GPUTreeCore\GPUTreeBuilder.cu">
       <Filter>GPUTreeCore</Filter>
     </CudaCompile>
+    <CudaCompile Include="Tools\Sorting.cu">
+      <Filter>Tools</Filter>
+    </CudaCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">
@@ -19,13 +22,19 @@
     <Filter Include="GPUTreeCore">
       <UniqueIdentifier>{29475411-49f7-4d4d-ace6-0097695a7a8a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{e36355ad-94ea-458e-b86a-7df436f16e40}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tests\Tests.cuh">
       <Filter>Tests</Filter>
     </ClInclude>
-    <ClInclude Include="GPUTree.cuh">
+    <ClInclude Include="GPUTreeCore\GPUTree.cuh">
       <Filter>GPUTreeCore</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\Tools.cuh">
+      <Filter>Tools</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
